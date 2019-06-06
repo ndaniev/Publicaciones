@@ -1,0 +1,2071 @@
+<html>
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="report.css" type="text/css"/>
+	<title>Class Diagram - Integer</title>
+	<script type="text/javascript" src="report.js"></script>
+	<script type="text/javascript" src="link_popup.js"></script>
+	<script type="text/javascript" src="tooltip.js"></script>
+</head>
+<body style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;" onload="initPage();initDiagram();initGridDiagram();">
+	<div style="position:absolute; z-index:2; visibility:hidden;border-top: 2px #FF0000 solid;" id="spotlight_top">
+	</div>
+	<div style="position:absolute; z-index:2; visibility:hidden;border-top: 2px #FF0000 solid;" id="spotlight_bottom">
+	</div>
+	<div style="position:absolute; z-index:2; visibility:hidden;border-left: 2px #FF0000 solid;" id="spotlight_left">
+	</div>
+	<div style="position:absolute; z-index:2; visibility:hidden;border-left: 2px #FF0000 solid;" id="spotlight_right">
+	</div>
+	<canvas width="100" style="position:absolute; z-index:2; visibility:hidden" id="spotlight_c" height="100">
+	</canvas>
+	<div style="position:absolute; width:100px; height:100px; z-index:1; visibility:hidden" id="spotLightResourcesTop">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+<a href="#top"><img style="border:none" src="../images/icons/BackToTop.gif" alt="Back to top"/></a>				</td>
+				<td>
+<a href="javascript:clearSpotLightFromOpenSpecButton();"><img style="border:none" src="../images/icons/OpenSpecification.gif" alt="Open specification"/></a>				</td>
+			</tr>
+		</table>
+	</div>
+	<div style="position:absolute; width:100px; height:100px; z-index:1; visibility:hidden" id="spotLightResourcesRight">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+<a href="#top"><img style="border:none" src="../images/icons/BackToTop.gif" alt="Back to top"/></a>				</td>
+			</tr>
+			<tr>
+				<td>
+<a href="javascript:clearSpotLightFromOpenSpecButton();"><img style="border:none" src="../images/icons/OpenSpecification.gif" alt="Open specification"/></a>				</td>
+			</tr>
+		</table>
+	</div>
+	<div style="position:absolute;z-index:4;visibility:hidden" id="linkPopupMenuLayer">
+		<table border="0" width="100%" style="border-style:solid; border-width:1px; border-color:#000000; background:#FFFFFF; width:250px" id="linkPopupMenuTable">
+		</table>
+	</div>
+	<div style="position:absolute; z-index:1; visibility:hidden; " id="referenceIconLayer">
+		<table border="0" cellpadding="3" cellspacing="0" style="font-size:1;">
+			<tr>
+				<td>
+					<img src="../images/icons/Ref.gif" style="border:none" onclick="movePopupPositionToReferenceIconPosition();resetPopupForReference();switchPopupShowHideStatus();" />				</td>
+			</tr>
+		</table>
+	</div>
+	<div style="position:absolute; z-index:1; visibility:hidden; " id="subdiagramIconLayer">
+		<table border="0" cellpadding="3" cellspacing="0" style="font-size:1;">
+			<tr>
+				<td>
+					<img src="../images/icons/Subdiagram.gif" style="border:none" onclick="movePopupPositionToSubdiagramIconPosition();resetPopupForSubdiagram();switchPopupShowHideStatus();" />				</td>
+			</tr>
+		</table>
+	</div>
+	<div style="position:absolute; z-index:1; visibility:hidden; " id="transitorIconLayer">
+		<table border="0" cellpadding="3" cellspacing="0" style="font-size:1;">
+			<tr>
+				<td>
+					<img src="../images/icons/Transitor.gif" style="border:none" onclick="movePopupPositionToTransitorIconPosition();resetPopupForTransitor();switchPopupShowHideStatus();" />				</td>
+			</tr>
+		</table>
+	</div>
+	<div style="position:absolute; z-index:1; visibility:hidden; " id="documentationIconLayer">
+		<table border="0" cellpadding="3" cellspacing="0" style="font-size:1;">
+			<tr>
+				<td>
+					<img src="../images/icons/Documentation.png" style="border:none" />				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="HeaderText">
+		Wrapper	</div>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="HeaderLine1">
+			</td>
+		</tr>
+		<tr>
+			<td class="HeaderLine2">
+			</td>
+		</tr>
+		<tr>
+			<td class="HeaderLine3">
+			</td>
+		</tr>
+	</table>
+	<div style="position:absolute; z-index:21; visibility:hidden" id="referencedBys">
+		<table border="0" width="100%" style="border-style:solid; border-width:1px; border-color:#000000; background:#FFFFFF; width:250px" id="referencedBysTable">
+		</table>
+	</div>
+	<div style="position:absolute; z-index:21; visibility:hidden" id="vplink">
+		<table border="1" cellpadding="0" cellspacing="0" bordercolor="#A9BFD3">
+			<tr>
+				<td>
+					<table border="0" cellpadding="0" width="100%" cellspacing="0">
+						<tr style="background:#DDDDDD">
+							<td style="font-size: 12px;" align="left">
+								<select onchange="vpLinkToggleName()" id="vplink-linkType">
+	<option value="Project Link">Project Link</option>
+	<option value="Page URL">Page URL</option>
+</select>
+							</td>
+							<td style="font-size: 12px;" align="right">
+								<input onclick="javascript: vpLinkToggleName()" id="vplink-checkbox" type="checkbox" />
+								<label for="vplink-checkbox">with Name</label>							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<textarea id="vplink-text" style="width: 348px; height: 60px; border-color: #7EADD9; outline: none;"></textarea>				</td>
+			</tr>
+		</table>
+	</div>
+	<p>
+<a href="Package_zKIE_NaGAqACCBie.html" class="PageParentTitle">integer : Package</a>	</p>
+	<p class="PageTitle">
+		<span id="PageTitleText">
+			Class Diagram - Integer		</span>
+<a onclick="javascript: showVpLink('Diagramas.vpp://diagram/3df4.NaGAqACCBiO', 'Integer\nDiagramas.vpp://diagram/3df4.NaGAqACCBiO', 'Integer', this); return false;" style="padding-left: 16px; font-size: 12px" href="#"><img src="../images/icons/link.png" border="0"> link</a>	</p>
+	<div style="position: relative; padding-bottom: 20px;">
+		<table border="0" cellpadding="0" width="100%" cellspacing="0" style="position: absolute; top: 0; left: 0; z-index: 20;" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),hideLinkPopup(),hideReferencedBys();">
+			<tr>
+				<td>
+<span class="TableContent">Jump to:</span>					<select id="SelectShape" class="TableContent" onChange="scrollWin('diagram', this.value);hideLinkPopup();showSpotLight('diagram', this.value)">
+<option value="">Please select a model element</option>
+<option value="shape|435.0|367.0|367.0|1437.0|Class_dClE_NaGAqACCBkR.html|Class_dClE_NaGAqACCBkR.html|uHlE.NaGAqACCBpC" id="optionuHlE.NaGAqACCBpC">Integer : Class</option>
+<option value="shape|888.0|305.0|92.0|87.0|Class_GSlE_NaGAqACCBoi.html|Class_GSlE_NaGAqACCBoi.html|eHlE.NaGAqACCBpE" id="optioneHlE.NaGAqACCBpE">IntegerCache : Class</option>
+<option value="shape|207.0|157.0|262.0|132.0|Class_gTXFcNaGAqDIVwse.html|Class_gTXFcNaGAqDIVwse.html|NLBE.NaGAqACCBjv" id="optionNLBE.NaGAqACCBjv">Number : Class</option>
+<option value="shape|98.0|392.0|193.0|203.0|Class_o_PVcNaGAqDIVww7.html|Class_o_PVcNaGAqDIVww7.html|WDWE.NaGAqACCBjS" id="optionWDWE.NaGAqACCBjS">Object : Class</option>
+<option value="shape|65.0|146.0|119.0|53.0|Class__AzFcNaGAqDIVwsK.html|Class__AzFcNaGAqDIVwsK.html|YbiE.NaGAqACCBix" id="optionYbiE.NaGAqACCBix">Comparable : Class</option>
+<option value="shape|45.0|63.0|817.0|1771.0|Package__AzFcNaGAqDIVwsJ.html|Package__AzFcNaGAqDIVwsJ.html|sbiE.NaGAqACCBiz" id="optionsbiE.NaGAqACCBiz">langs : Package</option>
+<option value="shape|1017.0|119.0|80.0|40.0|Class_Db5VcNaGAqDIVwv5.html|Class_Db5VcNaGAqDIVwv5.html|cocE.NaGAqACCBim" id="optioncocE.NaGAqACCBim">Serializable : Class</option>
+<option value="shape|997.0|74.0|120.0|130.0|Package_db5VcNaGAqDIVwv4.html|Package_db5VcNaGAqDIVwv4.html|iocE.NaGAqACCBio" id="optioniocE.NaGAqACCBio">io : Package</option>
+<option value="shape|35.0|3.0|1145.0|1841.0|Package_uAzFcNaGAqDIVwsI.html|Package_uAzFcNaGAqDIVwsI.html|SocE.NaGAqACCBiq" id="optionSocE.NaGAqACCBiq">java : Package</option>
+</select>				</td>
+			</tr>
+		</table>
+		<table border="0" cellpadding="0" width="100%" cellspacing="0" style="position: relative; top: 24;">
+			<tr>
+				<td>
+					<img id="diagram" src="../images/Integer.png" usemap="#diagram_map" class="Image" width="1184" height="1848"/>
+					<map name="diagram_map">
+<area imageId="diagram" coords="460.0, 150.0, 460.0, 157.0, 469.0, 157.0, 469.0, 164.0, 1026.0, 164.0, 1026.0, 159.0, 1017.0, 159.0, 1017.0, 150.0" coords2="460.0, 150.0, 460.0, 157.0, 469.0, 157.0, 469.0, 164.0, 1026.0, 164.0, 1026.0, 159.0, 1017.0, 159.0, 1017.0, 150.0" shape="poly" alt=":Realization" id="areadiagram_map_NLBE.NaGAqACCBjx_default" href="Realization_jMw1cNaGAqDIVwyC.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="207.0, 278.0, 166.78847, 319.0, 161.0, 319.0, 161.0, 324.90195, 161.0, 324.90195, 156.0, 330.0, 161.0, 335.0, 161.0, 392.0, 175.0, 392.0, 175.0, 330.82352, 216.01923, 289.0, 207.0, 289.0, 207.0, 278.0" coords2="207.0, 278.0, 166.78847, 319.0, 161.0, 319.0, 161.0, 324.90195, 161.0, 324.90195, 156.0, 330.0, 161.0, 335.0, 161.0, 392.0, 175.0, 392.0, 175.0, 330.82352, 216.01923, 289.0, 207.0, 289.0, 207.0, 278.0" shape="poly" alt=":Generalization" id="areadiagram_map_3LBE.NaGAqACCBjz_default" href="Generalization_Tw74_NaGAqACCBiA.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="445.0, 289.0, 445.0, 367.0, 459.0, 367.0, 459.0, 289.0" coords2="445.0, 289.0, 445.0, 367.0, 459.0, 367.0, 459.0, 289.0" shape="poly" alt=":Generalization" id="areadiagram_map_eHlE.NaGAqACCBpG_default" href="Generalization__SlE_NaGAqACCBoq.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="62.0, 190.0, 62.0, 1093.0, 59.0, 1093.0, 59.0, 1107.0, 62.0, 1107.0, 62.0, 1110.0, 76.0, 1110.0, 76.0, 1107.0, 435.0, 1107.0, 435.0, 1093.0, 76.0, 1093.0, 76.0, 199.0, 65.0, 199.0, 65.0, 190.0" coords2="62.0, 190.0, 62.0, 1093.0, 59.0, 1093.0, 59.0, 1107.0, 62.0, 1107.0, 62.0, 1110.0, 76.0, 1110.0, 76.0, 1107.0, 435.0, 1107.0, 435.0, 1093.0, 76.0, 1093.0, 76.0, 199.0, 65.0, 199.0, 65.0, 190.0" shape="poly" alt=":Realization" id="areadiagram_map_eHlE.NaGAqACCBpI_default" href="Realization_pSlE_NaGAqACCBor.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="802.0, 375.0, 802.0, 389.0, 888.0, 389.0, 888.0, 375.0" coords2="802.0, 375.0, 802.0, 389.0, 888.0, 389.0, 888.0, 375.0" shape="poly" alt=":Association" id="areadiagram_map_.HlE.NaGAqACCBpK_default" href="Association_AylE_NaGAqACCBo6.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" docContent="&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      The {@code Integer} class wraps a value of the primitive type
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@code int} in an object. An object of type {@code Integer}
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      contains a single field whose type is {@code int}.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;In addition, this class provides several methods for converting
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      an {@code int} to a {@code String} and a {@code String} to an
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@code int}, as well as other constants and methods useful when
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      dealing with an {@code int}.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;Implementation note: The implementations of the &amp;quot;bit twiddling&amp;quot;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      methods (such as {@link #highestOneBit(int) highestOneBit} and
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@link #numberOfTrailingZeros(int) numberOfTrailingZeros}) are
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      based on material from Henry S. Warren, Jr.'s &amp;​lt;i&amp;​gt;Hacker's
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Delight&amp;​lt;/i&amp;​gt;, (Addison Wesley, 2002).
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;Lee Boynton
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;Arthur van Hoff
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;Josh Bloch
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;Joseph D. Darcy
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @since JDK1.0
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+" coords="435, 367, 802, 1804" coords2="435, 367, 802, 1804" shape="rect" alt="Integer:Class" id="areadiagram_map_uHlE.NaGAqACCBpC_default" href="Class_dClE_NaGAqACCBkR.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),showTooltip(this)" onmousedown="clearSpotLight();" onmouseout="hideTooltip()"/>
+<area imageId="diagram" docContent="&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Cache to support the object identity semantics of autoboxing for values 
+      between
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      -128 and 127 (inclusive) as required by JLS.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      The cache is initialized on first usage. &amp;nbsp;The size of the cache
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      may be controlled by the {@code -XX:AutoBoxCacheMax=&amp;​lt;size&amp;​gt;} option.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      During VM initialization, java.lang.Integer.IntegerCache.high property
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      may be set and saved in the private system properties in the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      sun.misc.VM class.
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+" coords="888, 305, 980, 392" coords2="888, 305, 980, 392" shape="rect" alt="IntegerCache:Class" id="areadiagram_map_eHlE.NaGAqACCBpE_default" href="Class_GSlE_NaGAqACCBoi.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),showTooltip(this)" onmousedown="clearSpotLight();" onmouseout="hideTooltip()"/>
+<area imageId="diagram" docContent="&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      The abstract class {@code Number} is the superclass of platform
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      classes representing numeric values that are convertible to the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      primitive types {@code byte}, {@code double}, {@code float}, {@code
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      int}, {@code long}, and {@code short}.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      The specific semantics of the conversion from the numeric value of
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      a particular {@code Number} implementation to a given primitive
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      type is defined by the {@code Number} implementation in question.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      For platform classes, the conversion is often analogous to a
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      narrowing primitive conversion or a widening primitive conversion
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      as defining in &amp;​lt;cite&amp;​gt;The Java&amp;amp;trade; Language Specification&amp;​lt;/cite&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      for converting between primitive types. &amp;nbsp;Therefore, conversions may
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      lose information about the overall magnitude of a numeric value, may
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      lose precision, and may even return a result of a different sign
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      than the input.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      See the documentation of a given {@code Number} implementation for
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      conversion details.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Lee Boynton
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Arthur van Hoff
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @jls 5.1.2 Widening Primitive Conversions
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @jls 5.1.3 Narrowing Primitive Conversions
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @since &amp;nbsp;&amp;nbsp;JDK1.0
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+" coords="207, 157, 469, 289" coords2="207, 157, 469, 289" shape="rect" alt="Number:Class" id="areadiagram_map_NLBE.NaGAqACCBjv_default" href="Class_gTXFcNaGAqDIVwse.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),showTooltip(this)" onmousedown="clearSpotLight();" onmouseout="hideTooltip()"/>
+<area imageId="diagram" docContent="&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Class {@code Object} is the root of the class hierarchy.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Every class has {@code Object} as a superclass. All objects,
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      including arrays, implement the methods of this class.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;unascribed
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;java.lang.Class
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @since &amp;nbsp;&amp;nbsp;JDK1.0
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+" coords="98, 392, 291, 595" coords2="98, 392, 291, 595" shape="rect" alt="Object:Class" id="areadiagram_map_WDWE.NaGAqACCBjS_default" href="Class_o_PVcNaGAqDIVww7.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),showTooltip(this)" onmousedown="clearSpotLight();" onmouseout="hideTooltip()"/>
+<area imageId="diagram" docContent="&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      This interface imposes a total ordering on the objects of each class that
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      implements it. &amp;nbsp;This ordering is referred to as the class's &amp;​lt;i&amp;​gt;natural
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      ordering&amp;​lt;/i&amp;​gt;, and the class's &amp;​lt;tt&amp;​gt;compareTo&amp;​lt;/tt&amp;​gt; method is referred to as
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      its &amp;​lt;i&amp;​gt;natural comparison method&amp;​lt;/i&amp;​gt;.&amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Lists (and arrays) of objects that implement this interface can be sorted
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      automatically by {@link Collections#sort(List) Collections.sort} (and
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@link Arrays#sort(Object[]) Arrays.sort}). &amp;nbsp;Objects that implement this
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      interface can be used as keys in a {@linkplain SortedMap sorted map} or 
+      as
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      elements in a {@linkplain SortedSet sorted set}, without the need to
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      specify a {@linkplain Comparator comparator}.&amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      The natural ordering for a class &amp;​lt;tt&amp;​gt;C&amp;​lt;/tt&amp;​gt; is said to be &amp;​lt;i&amp;​gt;consistent
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      with equals&amp;​lt;/i&amp;​gt; if and only if &amp;​lt;tt&amp;​gt;e1.compareTo(e2) == 0&amp;​lt;/tt&amp;​gt; has
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the same boolean value as &amp;​lt;tt&amp;​gt;e1.equals(e2)&amp;​lt;/tt&amp;​gt; for every
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;tt&amp;​gt;e1&amp;​lt;/tt&amp;​gt; and &amp;​lt;tt&amp;​gt;e2&amp;​lt;/tt&amp;​gt; of class &amp;​lt;tt&amp;​gt;C&amp;​lt;/tt&amp;​gt;. &amp;nbsp;Note that &amp;​lt;tt&amp;​gt;null&amp;​lt;/tt&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      is not an instance of any class, and &amp;​lt;tt&amp;​gt;e.compareTo(null)&amp;​lt;/tt&amp;​gt; should
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      throw a &amp;​lt;tt&amp;​gt;NullPointerException&amp;​lt;/tt&amp;​gt; even though &amp;​lt;tt&amp;​gt;e.equals(null)&amp;​lt;/tt&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      returns &amp;​lt;tt&amp;​gt;false&amp;​lt;/tt&amp;​gt;.&amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      It is strongly recommended (though not required) that natural orderings 
+      be
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      consistent with equals. &amp;nbsp;This is so because sorted sets (and sorted maps)
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      without explicit comparators behave &amp;quot;strangely&amp;quot; when they are used with
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      elements (or keys) whose natural ordering is inconsistent with equals. 
+      &amp;nbsp;In
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      particular, such a sorted set (or sorted map) violates the general 
+      contract
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      for set (or map), which is defined in terms of the &amp;​lt;tt&amp;​gt;equals&amp;​lt;/tt&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      method.&amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      For example, if one adds two keys &amp;​lt;tt&amp;​gt;a&amp;​lt;/tt&amp;​gt; and &amp;​lt;tt&amp;​gt;b&amp;​lt;/tt&amp;​gt; such that
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@code (!a.equals(b) &amp;amp;&amp;amp; a.compareTo(b) == 0)} to a sorted
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      set that does not use an explicit comparator, the second &amp;​lt;tt&amp;​gt;add&amp;​lt;/tt&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      operation returns false (and the size of the sorted set does not 
+      increase)
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      because &amp;​lt;tt&amp;​gt;a&amp;​lt;/tt&amp;​gt; and &amp;​lt;tt&amp;​gt;b&amp;​lt;/tt&amp;​gt; are equivalent from the sorted set's
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      perspective.&amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Virtually all Java core classes that implement &amp;​lt;tt&amp;​gt;Comparable&amp;​lt;/tt&amp;​gt; have 
+      natural
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      orderings that are consistent with equals. &amp;nbsp;One exception is
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;tt&amp;​gt;java.math.BigDecimal&amp;​lt;/tt&amp;​gt;, whose natural ordering equates
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;tt&amp;​gt;BigDecimal&amp;​lt;/tt&amp;​gt; objects with equal values and different precisions
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      (such as 4.0 and 4.00).&amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      For the mathematically inclined, the &amp;​lt;i&amp;​gt;relation&amp;​lt;/i&amp;​gt; that defines
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the natural ordering on a given class C is:&amp;​lt;pre&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {(x, y) such that x.compareTo(y) &amp;amp;lt;= 0}.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;/pre&amp;​gt; The &amp;​lt;i&amp;​gt;quotient&amp;​lt;/i&amp;​gt; for this total order is: &amp;​lt;pre&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {(x, y) such that x.compareTo(y) == 0}.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;/pre&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      It follows immediately from the contract for &amp;​lt;tt&amp;​gt;compareTo&amp;​lt;/tt&amp;​gt; that the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      quotient is an &amp;​lt;i&amp;​gt;equivalence relation&amp;​lt;/i&amp;​gt; on &amp;​lt;tt&amp;​gt;C&amp;​lt;/tt&amp;​gt;, and that the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      natural ordering is a &amp;​lt;i&amp;​gt;total order&amp;​lt;/i&amp;​gt; on &amp;​lt;tt&amp;​gt;C&amp;​lt;/tt&amp;​gt;. &amp;nbsp;When we say 
+      that a
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      class's natural ordering is &amp;​lt;i&amp;​gt;consistent with equals&amp;​lt;/i&amp;​gt;, we mean that 
+      the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      quotient for the natural ordering is the equivalence relation defined by
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the class's {@link Object#equals(Object) equals(Object)} method:&amp;​lt;pre&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {(x, y) such that x.equals(y)}. &amp;​lt;/pre&amp;​gt;&amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      This interface is a member of the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;a href=&amp;quot;{@docRoot}/../technotes/guides/collections/index.html&amp;quot;&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Java Collections Framework&amp;​lt;/a&amp;​gt;.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @param &amp;​lt;T&amp;​gt; the type of objects that this object may be compared to
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;Josh Bloch
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see java.util.Comparator
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @since 1.2
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+" coords="65, 146, 184, 199" coords2="65, 146, 184, 199" shape="rect" alt="Comparable:Class" id="areadiagram_map_YbiE.NaGAqACCBix_default" href="Class__AzFcNaGAqDIVwsK.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),showTooltip(this)" onmousedown="clearSpotLight();" onmouseout="hideTooltip()"/>
+<area imageId="diagram" coords="45, 63, 862, 1834" coords2="45, 63, 862, 1834" shape="rect" alt="langs:Package" id="areadiagram_map_sbiE.NaGAqACCBiz_default" href="Package__AzFcNaGAqDIVwsJ.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" docContent="&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Serializability of a class is enabled by the class implementing the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      java.io.Serializable interface. Classes that do not implement this
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      interface will not have any of their state serialized or
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      deserialized. &amp;nbsp;All subtypes of a serializable class are themselves
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      serializable. &amp;nbsp;The serialization interface has no methods or fields
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      and serves only to identify the semantics of being serializable. &amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      To allow subtypes of non-serializable classes to be serialized, the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      subtype may assume responsibility for saving and restoring the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      state of the supertype's public, protected, and (if accessible)
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      package fields. &amp;nbsp;The subtype may assume this responsibility only if
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the class it extends has an accessible no-arg constructor to
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      initialize the class's state. &amp;nbsp;It is an error to declare a class
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Serializable if this is not the case. &amp;nbsp;The error will be detected at
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      runtime. &amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      During deserialization, the fields of non-serializable classes will
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      be initialized using the public or protected no-arg constructor of
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the class. &amp;nbsp;A no-arg constructor must be accessible to the subclass
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      that is serializable. &amp;nbsp;The fields of serializable subclasses will
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      be restored from the stream. &amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      When traversing a graph, an object may be encountered that does not
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      support the Serializable interface. In this case the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      NotSerializableException will be thrown and will identify the class
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      of the non-serializable object. &amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Classes that require special handling during the serialization and
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      deserialization process must implement special methods with these exact
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      signatures:
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;PRE&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      private void writeObject(java.io.ObjectOutputStream out)
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      throws IOException
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      private void readObject(java.io.ObjectInputStream in)
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      throws IOException, ClassNotFoundException;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      private void readObjectNoData()
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      throws ObjectStreamException;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;/PRE&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;The writeObject method is responsible for writing the state of the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      object for its particular class so that the corresponding
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      readObject method can restore it. &amp;nbsp;The default mechanism for saving
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the Object's fields can be invoked by calling
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      out.defaultWriteObject. The method does not need to concern
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      itself with the state belonging to its superclasses or subclasses.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      State is saved by writing the individual fields to the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      ObjectOutputStream using the writeObject method or by using the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      methods for primitive data types supported by DataOutput.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;The readObject method is responsible for reading from the stream and
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      restoring the classes fields. It may call in.defaultReadObject to invoke
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the default mechanism for restoring the object's non-static and
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      non-transient fields. &amp;nbsp;The defaultReadObject method uses information in
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the stream to assign the fields of the object saved in the stream with 
+      the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      correspondingly named fields in the current object. &amp;nbsp;This handles the 
+      case
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      when the class has evolved to add new fields. The method does not need to
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      concern itself with the state belonging to its superclasses or 
+      subclasses.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      State is saved by writing the individual fields to the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      ObjectOutputStream using the writeObject method or by using the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      methods for primitive data types supported by DataOutput.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;The readObjectNoData method is responsible for initializing the state 
+      of
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the object for its particular class in the event that the serialization
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      stream does not list the given class as a superclass of the object being
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      deserialized. &amp;nbsp;This may occur in cases where the receiving party uses a
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      different version of the deserialized instance's class than the sending
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      party, and the receiver's version extends classes that are not extended 
+      by
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the sender's version. &amp;nbsp;This may also occur if the serialization stream 
+      has
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      been tampered; hence, readObjectNoData is useful for initializing
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      deserialized objects properly despite a &amp;quot;hostile&amp;quot; or incomplete source
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      stream.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;Serializable classes that need to designate an alternative object to 
+      be
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      used when writing an object to the stream should implement this
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      special method with the exact signature:
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;PRE&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      ANY-ACCESS-MODIFIER Object writeReplace() throws ObjectStreamException;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;/PRE&amp;​gt;&amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      This writeReplace method is invoked by serialization if the method
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      exists and it would be accessible from a method defined within the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      class of the object being serialized. Thus, the method can have private,
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      protected and package-private access. Subclass access to this method
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      follows java accessibility rules. &amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Classes that need to designate a replacement when an instance of it
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      is read from the stream should implement this special method with the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      exact signature.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;PRE&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      ANY-ACCESS-MODIFIER Object readResolve() throws ObjectStreamException;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;/PRE&amp;​gt;&amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      This readResolve method follows the same invocation rules and
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      accessibility rules as writeReplace.&amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      The serialization runtime associates with each serializable class a 
+      version
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      number, called a serialVersionUID, which is used during deserialization 
+      to
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      verify that the sender and receiver of a serialized object have loaded
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      classes for that object that are compatible with respect to 
+      serialization.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      If the receiver has loaded a class for the object that has a different
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      serialVersionUID than that of the corresponding sender's class, then
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      deserialization will result in an {@link InvalidClassException}. &amp;nbsp;A
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      serializable class can declare its own serialVersionUID explicitly by
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      declaring a field named &amp;​lt;code&amp;​gt;&amp;quot;serialVersionUID&amp;quot;&amp;​lt;/code&amp;​gt; that must be 
+      static,
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      final, and of type &amp;​lt;code&amp;​gt;long&amp;​lt;/code&amp;​gt;:
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;PRE&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      ANY-ACCESS-MODIFIER static final long serialVersionUID = 42L;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;/PRE&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      If a serializable class does not explicitly declare a serialVersionUID, 
+      then
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the serialization runtime will calculate a default serialVersionUID value
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      for that class based on various aspects of the class, as described in the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Java(TM) Object Serialization Specification. &amp;nbsp;However, it is &amp;​lt;em&amp;​gt;strongly
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      recommended&amp;​lt;/em&amp;​gt; that all serializable classes explicitly declare
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      serialVersionUID values, since the default serialVersionUID computation 
+      is
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      highly sensitive to class details that may vary depending on compiler
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      implementations, and can thus result in unexpected
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;code&amp;​gt;InvalidClassException&amp;​lt;/code&amp;​gt;s during deserialization. &amp;nbsp;Therefore, 
+      to
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      guarantee a consistent serialVersionUID value across different java 
+      compiler
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      implementations, a serializable class must declare an explicit
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      serialVersionUID value. &amp;nbsp;It is also strongly advised that explicit
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      serialVersionUID declarations use the &amp;​lt;code&amp;​gt;private&amp;​lt;/code&amp;​gt; modifier where
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      possible, since such declarations apply only to the immediately declaring
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      class--serialVersionUID fields are not useful as inherited members. Array
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      classes cannot declare an explicit serialVersionUID, so they always have
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the default computed value, but the requirement for matching
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      serialVersionUID values is waived for array classes.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;unascribed
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see java.io.ObjectOutputStream
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see java.io.ObjectInputStream
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see java.io.ObjectOutput
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see java.io.ObjectInput
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see java.io.Externalizable
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @since &amp;nbsp;&amp;nbsp;JDK1.1
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+" coords="1017, 119, 1097, 159" coords2="1017, 119, 1097, 159" shape="rect" alt="Serializable:Class" id="areadiagram_map_cocE.NaGAqACCBim_default" href="Class_Db5VcNaGAqDIVwv5.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),showTooltip(this)" onmousedown="clearSpotLight();" onmouseout="hideTooltip()"/>
+<area imageId="diagram" coords="997, 74, 1117, 204" coords2="997, 74, 1117, 204" shape="rect" alt="io:Package" id="areadiagram_map_iocE.NaGAqACCBio_default" href="Package_db5VcNaGAqDIVwv4.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="35, 3, 1180, 1844" coords2="35, 3, 1180, 1844" shape="rect" alt="java:Package" id="areadiagram_map_SocE.NaGAqACCBiq_default" href="Package_uAzFcNaGAqDIVwsI.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+</map>
+				</td>
+			</tr>
+		</table>
+		<p>
+		</p>
+	</div>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+				Model Elements			</td>
+		</tr>
+		<tr>
+			<td style="height: 5px">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="30%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Description</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_dClE_NaGAqACCBkR.html" class="ItemLink">Integer : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      The {@code Integer} class wraps a value of the primitive type
+    </p>
+    <p style="margin-top:0;">
+      {@code int} in an object. An object of type {@code Integer}
+    </p>
+    <p style="margin-top:0;">
+      contains a single field whose type is {@code int}.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;In addition, this class provides several methods for converting
+    </p>
+    <p style="margin-top:0;">
+      an {@code int} to a {@code String} and a {@code String} to an
+    </p>
+    <p style="margin-top:0;">
+      {@code int}, as well as other constants and methods useful when
+    </p>
+    <p style="margin-top:0;">
+      dealing with an {@code int}.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;Implementation note: The implementations of the &quot;bit twiddling&quot;
+    </p>
+    <p style="margin-top:0;">
+      methods (such as {@link #highestOneBit(int) highestOneBit} and
+    </p>
+    <p style="margin-top:0;">
+      {@link #numberOfTrailingZeros(int) numberOfTrailingZeros}) are
+    </p>
+    <p style="margin-top:0;">
+      based on material from Henry S. Warren, Jr.'s &lt;i&gt;Hacker's
+    </p>
+    <p style="margin-top:0;">
+      Delight&lt;/i&gt;, (Addison Wesley, 2002).
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Lee Boynton
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Arthur van Hoff
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Josh Bloch
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Joseph D. Darcy
+    </p>
+    <p style="margin-top:0;">
+      @since JDK1.0
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_GSlE_NaGAqACCBoi.html" class="ItemLink">IntegerCache : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Cache to support the object identity semantics of autoboxing for values 
+      between
+    </p>
+    <p style="margin-top:0;">
+      -128 and 127 (inclusive) as required by JLS.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      The cache is initialized on first usage. &nbsp;The size of the cache
+    </p>
+    <p style="margin-top:0;">
+      may be controlled by the {@code -XX:AutoBoxCacheMax=&lt;size&gt;} option.
+    </p>
+    <p style="margin-top:0;">
+      During VM initialization, java.lang.Integer.IntegerCache.high property
+    </p>
+    <p style="margin-top:0;">
+      may be set and saved in the private system properties in the
+    </p>
+    <p style="margin-top:0;">
+      sun.misc.VM class.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_gTXFcNaGAqDIVwse.html" class="ItemLink">Number : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      The abstract class {@code Number} is the superclass of platform
+    </p>
+    <p style="margin-top:0;">
+      classes representing numeric values that are convertible to the
+    </p>
+    <p style="margin-top:0;">
+      primitive types {@code byte}, {@code double}, {@code float}, {@code
+    </p>
+    <p style="margin-top:0;">
+      int}, {@code long}, and {@code short}.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      The specific semantics of the conversion from the numeric value of
+    </p>
+    <p style="margin-top:0;">
+      a particular {@code Number} implementation to a given primitive
+    </p>
+    <p style="margin-top:0;">
+      type is defined by the {@code Number} implementation in question.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      For platform classes, the conversion is often analogous to a
+    </p>
+    <p style="margin-top:0;">
+      narrowing primitive conversion or a widening primitive conversion
+    </p>
+    <p style="margin-top:0;">
+      as defining in &lt;cite&gt;The Java&amp;trade; Language Specification&lt;/cite&gt;
+    </p>
+    <p style="margin-top:0;">
+      for converting between primitive types. &nbsp;Therefore, conversions may
+    </p>
+    <p style="margin-top:0;">
+      lose information about the overall magnitude of a numeric value, may
+    </p>
+    <p style="margin-top:0;">
+      lose precision, and may even return a result of a different sign
+    </p>
+    <p style="margin-top:0;">
+      than the input.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      See the documentation of a given {@code Number} implementation for
+    </p>
+    <p style="margin-top:0;">
+      conversion details.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lee Boynton
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arthur van Hoff
+    </p>
+    <p style="margin-top:0;">
+      @jls 5.1.2 Widening Primitive Conversions
+    </p>
+    <p style="margin-top:0;">
+      @jls 5.1.3 Narrowing Primitive Conversions
+    </p>
+    <p style="margin-top:0;">
+      @since &nbsp;&nbsp;JDK1.0
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_o_PVcNaGAqDIVww7.html" class="ItemLink">Object : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Class {@code Object} is the root of the class hierarchy.
+    </p>
+    <p style="margin-top:0;">
+      Every class has {@code Object} as a superclass. All objects,
+    </p>
+    <p style="margin-top:0;">
+      including arrays, implement the methods of this class.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;unascribed
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;java.lang.Class
+    </p>
+    <p style="margin-top:0;">
+      @since &nbsp;&nbsp;JDK1.0
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class__AzFcNaGAqDIVwsK.html" class="ItemLink">Comparable : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      This interface imposes a total ordering on the objects of each class that
+    </p>
+    <p style="margin-top:0;">
+      implements it. &nbsp;This ordering is referred to as the class's &lt;i&gt;natural
+    </p>
+    <p style="margin-top:0;">
+      ordering&lt;/i&gt;, and the class's &lt;tt&gt;compareTo&lt;/tt&gt; method is referred to as
+    </p>
+    <p style="margin-top:0;">
+      its &lt;i&gt;natural comparison method&lt;/i&gt;.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      Lists (and arrays) of objects that implement this interface can be sorted
+    </p>
+    <p style="margin-top:0;">
+      automatically by {@link Collections#sort(List) Collections.sort} (and
+    </p>
+    <p style="margin-top:0;">
+      {@link Arrays#sort(Object[]) Arrays.sort}). &nbsp;Objects that implement this
+    </p>
+    <p style="margin-top:0;">
+      interface can be used as keys in a {@linkplain SortedMap sorted map} or 
+      as
+    </p>
+    <p style="margin-top:0;">
+      elements in a {@linkplain SortedSet sorted set}, without the need to
+    </p>
+    <p style="margin-top:0;">
+      specify a {@linkplain Comparator comparator}.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      The natural ordering for a class &lt;tt&gt;C&lt;/tt&gt; is said to be &lt;i&gt;consistent
+    </p>
+    <p style="margin-top:0;">
+      with equals&lt;/i&gt; if and only if &lt;tt&gt;e1.compareTo(e2) == 0&lt;/tt&gt; has
+    </p>
+    <p style="margin-top:0;">
+      the same boolean value as &lt;tt&gt;e1.equals(e2)&lt;/tt&gt; for every
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;e1&lt;/tt&gt; and &lt;tt&gt;e2&lt;/tt&gt; of class &lt;tt&gt;C&lt;/tt&gt;. &nbsp;Note that &lt;tt&gt;null&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      is not an instance of any class, and &lt;tt&gt;e.compareTo(null)&lt;/tt&gt; should
+    </p>
+    <p style="margin-top:0;">
+      throw a &lt;tt&gt;NullPointerException&lt;/tt&gt; even though &lt;tt&gt;e.equals(null)&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      returns &lt;tt&gt;false&lt;/tt&gt;.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      It is strongly recommended (though not required) that natural orderings 
+      be
+    </p>
+    <p style="margin-top:0;">
+      consistent with equals. &nbsp;This is so because sorted sets (and sorted maps)
+    </p>
+    <p style="margin-top:0;">
+      without explicit comparators behave &quot;strangely&quot; when they are used with
+    </p>
+    <p style="margin-top:0;">
+      elements (or keys) whose natural ordering is inconsistent with equals. 
+      &nbsp;In
+    </p>
+    <p style="margin-top:0;">
+      particular, such a sorted set (or sorted map) violates the general 
+      contract
+    </p>
+    <p style="margin-top:0;">
+      for set (or map), which is defined in terms of the &lt;tt&gt;equals&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      method.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      For example, if one adds two keys &lt;tt&gt;a&lt;/tt&gt; and &lt;tt&gt;b&lt;/tt&gt; such that
+    </p>
+    <p style="margin-top:0;">
+      {@code (!a.equals(b) &amp;&amp; a.compareTo(b) == 0)} to a sorted
+    </p>
+    <p style="margin-top:0;">
+      set that does not use an explicit comparator, the second &lt;tt&gt;add&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      operation returns false (and the size of the sorted set does not 
+      increase)
+    </p>
+    <p style="margin-top:0;">
+      because &lt;tt&gt;a&lt;/tt&gt; and &lt;tt&gt;b&lt;/tt&gt; are equivalent from the sorted set's
+    </p>
+    <p style="margin-top:0;">
+      perspective.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      Virtually all Java core classes that implement &lt;tt&gt;Comparable&lt;/tt&gt; have 
+      natural
+    </p>
+    <p style="margin-top:0;">
+      orderings that are consistent with equals. &nbsp;One exception is
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;java.math.BigDecimal&lt;/tt&gt;, whose natural ordering equates
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;BigDecimal&lt;/tt&gt; objects with equal values and different precisions
+    </p>
+    <p style="margin-top:0;">
+      (such as 4.0 and 4.00).&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      For the mathematically inclined, the &lt;i&gt;relation&lt;/i&gt; that defines
+    </p>
+    <p style="margin-top:0;">
+      the natural ordering on a given class C is:&lt;pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      {(x, y) such that x.compareTo(y) &amp;lt;= 0}.
+    </p>
+    <p style="margin-top:0;">
+      &lt;/pre&gt; The &lt;i&gt;quotient&lt;/i&gt; for this total order is: &lt;pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      {(x, y) such that x.compareTo(y) == 0}.
+    </p>
+    <p style="margin-top:0;">
+      &lt;/pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      It follows immediately from the contract for &lt;tt&gt;compareTo&lt;/tt&gt; that the
+    </p>
+    <p style="margin-top:0;">
+      quotient is an &lt;i&gt;equivalence relation&lt;/i&gt; on &lt;tt&gt;C&lt;/tt&gt;, and that the
+    </p>
+    <p style="margin-top:0;">
+      natural ordering is a &lt;i&gt;total order&lt;/i&gt; on &lt;tt&gt;C&lt;/tt&gt;. &nbsp;When we say 
+      that a
+    </p>
+    <p style="margin-top:0;">
+      class's natural ordering is &lt;i&gt;consistent with equals&lt;/i&gt;, we mean that 
+      the
+    </p>
+    <p style="margin-top:0;">
+      quotient for the natural ordering is the equivalence relation defined by
+    </p>
+    <p style="margin-top:0;">
+      the class's {@link Object#equals(Object) equals(Object)} method:&lt;pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      {(x, y) such that x.equals(y)}. &lt;/pre&gt;&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      This interface is a member of the
+    </p>
+    <p style="margin-top:0;">
+      &lt;a href=&quot;{@docRoot}/../technotes/guides/collections/index.html&quot;&gt;
+    </p>
+    <p style="margin-top:0;">
+      Java Collections Framework&lt;/a&gt;.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @param &lt;T&gt; the type of objects that this object may be compared to
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Josh Bloch
+    </p>
+    <p style="margin-top:0;">
+      @see java.util.Comparator
+    </p>
+    <p style="margin-top:0;">
+      @since 1.2
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Package.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Package.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Package__AzFcNaGAqDIVwsJ.html" class="ItemLink">langs : Package</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"></span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_Db5VcNaGAqDIVwv5.html" class="ItemLink">Serializable : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Serializability of a class is enabled by the class implementing the
+    </p>
+    <p style="margin-top:0;">
+      java.io.Serializable interface. Classes that do not implement this
+    </p>
+    <p style="margin-top:0;">
+      interface will not have any of their state serialized or
+    </p>
+    <p style="margin-top:0;">
+      deserialized. &nbsp;All subtypes of a serializable class are themselves
+    </p>
+    <p style="margin-top:0;">
+      serializable. &nbsp;The serialization interface has no methods or fields
+    </p>
+    <p style="margin-top:0;">
+      and serves only to identify the semantics of being serializable. &lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      To allow subtypes of non-serializable classes to be serialized, the
+    </p>
+    <p style="margin-top:0;">
+      subtype may assume responsibility for saving and restoring the
+    </p>
+    <p style="margin-top:0;">
+      state of the supertype's public, protected, and (if accessible)
+    </p>
+    <p style="margin-top:0;">
+      package fields. &nbsp;The subtype may assume this responsibility only if
+    </p>
+    <p style="margin-top:0;">
+      the class it extends has an accessible no-arg constructor to
+    </p>
+    <p style="margin-top:0;">
+      initialize the class's state. &nbsp;It is an error to declare a class
+    </p>
+    <p style="margin-top:0;">
+      Serializable if this is not the case. &nbsp;The error will be detected at
+    </p>
+    <p style="margin-top:0;">
+      runtime. &lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      During deserialization, the fields of non-serializable classes will
+    </p>
+    <p style="margin-top:0;">
+      be initialized using the public or protected no-arg constructor of
+    </p>
+    <p style="margin-top:0;">
+      the class. &nbsp;A no-arg constructor must be accessible to the subclass
+    </p>
+    <p style="margin-top:0;">
+      that is serializable. &nbsp;The fields of serializable subclasses will
+    </p>
+    <p style="margin-top:0;">
+      be restored from the stream. &lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      When traversing a graph, an object may be encountered that does not
+    </p>
+    <p style="margin-top:0;">
+      support the Serializable interface. In this case the
+    </p>
+    <p style="margin-top:0;">
+      NotSerializableException will be thrown and will identify the class
+    </p>
+    <p style="margin-top:0;">
+      of the non-serializable object. &lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      Classes that require special handling during the serialization and
+    </p>
+    <p style="margin-top:0;">
+      deserialization process must implement special methods with these exact
+    </p>
+    <p style="margin-top:0;">
+      signatures:
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;PRE&gt;
+    </p>
+    <p style="margin-top:0;">
+      private void writeObject(java.io.ObjectOutputStream out)
+    </p>
+    <p style="margin-top:0;">
+      throws IOException
+    </p>
+    <p style="margin-top:0;">
+      private void readObject(java.io.ObjectInputStream in)
+    </p>
+    <p style="margin-top:0;">
+      throws IOException, ClassNotFoundException;
+    </p>
+    <p style="margin-top:0;">
+      private void readObjectNoData()
+    </p>
+    <p style="margin-top:0;">
+      throws ObjectStreamException;
+    </p>
+    <p style="margin-top:0;">
+      &lt;/PRE&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The writeObject method is responsible for writing the state of the
+    </p>
+    <p style="margin-top:0;">
+      object for its particular class so that the corresponding
+    </p>
+    <p style="margin-top:0;">
+      readObject method can restore it. &nbsp;The default mechanism for saving
+    </p>
+    <p style="margin-top:0;">
+      the Object's fields can be invoked by calling
+    </p>
+    <p style="margin-top:0;">
+      out.defaultWriteObject. The method does not need to concern
+    </p>
+    <p style="margin-top:0;">
+      itself with the state belonging to its superclasses or subclasses.
+    </p>
+    <p style="margin-top:0;">
+      State is saved by writing the individual fields to the
+    </p>
+    <p style="margin-top:0;">
+      ObjectOutputStream using the writeObject method or by using the
+    </p>
+    <p style="margin-top:0;">
+      methods for primitive data types supported by DataOutput.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The readObject method is responsible for reading from the stream and
+    </p>
+    <p style="margin-top:0;">
+      restoring the classes fields. It may call in.defaultReadObject to invoke
+    </p>
+    <p style="margin-top:0;">
+      the default mechanism for restoring the object's non-static and
+    </p>
+    <p style="margin-top:0;">
+      non-transient fields. &nbsp;The defaultReadObject method uses information in
+    </p>
+    <p style="margin-top:0;">
+      the stream to assign the fields of the object saved in the stream with 
+      the
+    </p>
+    <p style="margin-top:0;">
+      correspondingly named fields in the current object. &nbsp;This handles the 
+      case
+    </p>
+    <p style="margin-top:0;">
+      when the class has evolved to add new fields. The method does not need to
+    </p>
+    <p style="margin-top:0;">
+      concern itself with the state belonging to its superclasses or 
+      subclasses.
+    </p>
+    <p style="margin-top:0;">
+      State is saved by writing the individual fields to the
+    </p>
+    <p style="margin-top:0;">
+      ObjectOutputStream using the writeObject method or by using the
+    </p>
+    <p style="margin-top:0;">
+      methods for primitive data types supported by DataOutput.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The readObjectNoData method is responsible for initializing the state 
+      of
+    </p>
+    <p style="margin-top:0;">
+      the object for its particular class in the event that the serialization
+    </p>
+    <p style="margin-top:0;">
+      stream does not list the given class as a superclass of the object being
+    </p>
+    <p style="margin-top:0;">
+      deserialized. &nbsp;This may occur in cases where the receiving party uses a
+    </p>
+    <p style="margin-top:0;">
+      different version of the deserialized instance's class than the sending
+    </p>
+    <p style="margin-top:0;">
+      party, and the receiver's version extends classes that are not extended 
+      by
+    </p>
+    <p style="margin-top:0;">
+      the sender's version. &nbsp;This may also occur if the serialization stream 
+      has
+    </p>
+    <p style="margin-top:0;">
+      been tampered; hence, readObjectNoData is useful for initializing
+    </p>
+    <p style="margin-top:0;">
+      deserialized objects properly despite a &quot;hostile&quot; or incomplete source
+    </p>
+    <p style="margin-top:0;">
+      stream.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;Serializable classes that need to designate an alternative object to 
+      be
+    </p>
+    <p style="margin-top:0;">
+      used when writing an object to the stream should implement this
+    </p>
+    <p style="margin-top:0;">
+      special method with the exact signature:
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;PRE&gt;
+    </p>
+    <p style="margin-top:0;">
+      ANY-ACCESS-MODIFIER Object writeReplace() throws ObjectStreamException;
+    </p>
+    <p style="margin-top:0;">
+      &lt;/PRE&gt;&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      This writeReplace method is invoked by serialization if the method
+    </p>
+    <p style="margin-top:0;">
+      exists and it would be accessible from a method defined within the
+    </p>
+    <p style="margin-top:0;">
+      class of the object being serialized. Thus, the method can have private,
+    </p>
+    <p style="margin-top:0;">
+      protected and package-private access. Subclass access to this method
+    </p>
+    <p style="margin-top:0;">
+      follows java accessibility rules. &lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      Classes that need to designate a replacement when an instance of it
+    </p>
+    <p style="margin-top:0;">
+      is read from the stream should implement this special method with the
+    </p>
+    <p style="margin-top:0;">
+      exact signature.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;PRE&gt;
+    </p>
+    <p style="margin-top:0;">
+      ANY-ACCESS-MODIFIER Object readResolve() throws ObjectStreamException;
+    </p>
+    <p style="margin-top:0;">
+      &lt;/PRE&gt;&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      This readResolve method follows the same invocation rules and
+    </p>
+    <p style="margin-top:0;">
+      accessibility rules as writeReplace.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      The serialization runtime associates with each serializable class a 
+      version
+    </p>
+    <p style="margin-top:0;">
+      number, called a serialVersionUID, which is used during deserialization 
+      to
+    </p>
+    <p style="margin-top:0;">
+      verify that the sender and receiver of a serialized object have loaded
+    </p>
+    <p style="margin-top:0;">
+      classes for that object that are compatible with respect to 
+      serialization.
+    </p>
+    <p style="margin-top:0;">
+      If the receiver has loaded a class for the object that has a different
+    </p>
+    <p style="margin-top:0;">
+      serialVersionUID than that of the corresponding sender's class, then
+    </p>
+    <p style="margin-top:0;">
+      deserialization will result in an {@link InvalidClassException}. &nbsp;A
+    </p>
+    <p style="margin-top:0;">
+      serializable class can declare its own serialVersionUID explicitly by
+    </p>
+    <p style="margin-top:0;">
+      declaring a field named &lt;code&gt;&quot;serialVersionUID&quot;&lt;/code&gt; that must be 
+      static,
+    </p>
+    <p style="margin-top:0;">
+      final, and of type &lt;code&gt;long&lt;/code&gt;:
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;PRE&gt;
+    </p>
+    <p style="margin-top:0;">
+      ANY-ACCESS-MODIFIER static final long serialVersionUID = 42L;
+    </p>
+    <p style="margin-top:0;">
+      &lt;/PRE&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      If a serializable class does not explicitly declare a serialVersionUID, 
+      then
+    </p>
+    <p style="margin-top:0;">
+      the serialization runtime will calculate a default serialVersionUID value
+    </p>
+    <p style="margin-top:0;">
+      for that class based on various aspects of the class, as described in the
+    </p>
+    <p style="margin-top:0;">
+      Java(TM) Object Serialization Specification. &nbsp;However, it is &lt;em&gt;strongly
+    </p>
+    <p style="margin-top:0;">
+      recommended&lt;/em&gt; that all serializable classes explicitly declare
+    </p>
+    <p style="margin-top:0;">
+      serialVersionUID values, since the default serialVersionUID computation 
+      is
+    </p>
+    <p style="margin-top:0;">
+      highly sensitive to class details that may vary depending on compiler
+    </p>
+    <p style="margin-top:0;">
+      implementations, and can thus result in unexpected
+    </p>
+    <p style="margin-top:0;">
+      &lt;code&gt;InvalidClassException&lt;/code&gt;s during deserialization. &nbsp;Therefore, 
+      to
+    </p>
+    <p style="margin-top:0;">
+      guarantee a consistent serialVersionUID value across different java 
+      compiler
+    </p>
+    <p style="margin-top:0;">
+      implementations, a serializable class must declare an explicit
+    </p>
+    <p style="margin-top:0;">
+      serialVersionUID value. &nbsp;It is also strongly advised that explicit
+    </p>
+    <p style="margin-top:0;">
+      serialVersionUID declarations use the &lt;code&gt;private&lt;/code&gt; modifier where
+    </p>
+    <p style="margin-top:0;">
+      possible, since such declarations apply only to the immediately declaring
+    </p>
+    <p style="margin-top:0;">
+      class--serialVersionUID fields are not useful as inherited members. Array
+    </p>
+    <p style="margin-top:0;">
+      classes cannot declare an explicit serialVersionUID, so they always have
+    </p>
+    <p style="margin-top:0;">
+      the default computed value, but the requirement for matching
+    </p>
+    <p style="margin-top:0;">
+      serialVersionUID values is waived for array classes.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;unascribed
+    </p>
+    <p style="margin-top:0;">
+      @see java.io.ObjectOutputStream
+    </p>
+    <p style="margin-top:0;">
+      @see java.io.ObjectInputStream
+    </p>
+    <p style="margin-top:0;">
+      @see java.io.ObjectOutput
+    </p>
+    <p style="margin-top:0;">
+      @see java.io.ObjectInput
+    </p>
+    <p style="margin-top:0;">
+      @see java.io.Externalizable
+    </p>
+    <p style="margin-top:0;">
+      @since &nbsp;&nbsp;JDK1.1
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Package.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Package.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Package_db5VcNaGAqDIVwv4.html" class="ItemLink">io : Package</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"></span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Package.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Package.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Package_uAzFcNaGAqDIVwsI.html" class="ItemLink">java : Package</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"></span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<div style="height: 20px">
+	</div>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="FooterLine">
+			</td>
+		</tr>
+	</table>
+	<div class="HeaderText">
+		Wrapper	</div>
+</body>
+</html>

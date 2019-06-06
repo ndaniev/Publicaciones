@@ -1,0 +1,1726 @@
+<html>
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="report.css" type="text/css"/>
+	<title></title>
+	<script type="text/javascript" src="report.js"></script>
+	<script type="text/javascript" src="link_popup.js"></script>
+	<script type="text/javascript" src="tooltip.js"></script>
+</head>
+<body style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;">
+	<div style="position:absolute; z-index:21; visibility:hidden" id="vplink">
+		<table border="1" cellpadding="0" cellspacing="0" bordercolor="#A9BFD3">
+			<tr>
+				<td>
+					<table border="0" cellpadding="0" width="100%" cellspacing="0">
+						<tr style="background:#DDDDDD">
+							<td style="font-size: 12px;" align="left">
+								<select onchange="vpLinkToggleName()" id="vplink-linkType">
+	<option value="Project Link">Project Link</option>
+	<option value="Page URL">Page URL</option>
+</select>
+							</td>
+							<td style="font-size: 12px;" align="right">
+								<input onclick="javascript: vpLinkToggleName()" id="vplink-checkbox" type="checkbox" />
+								<label for="vplink-checkbox">with Name</label>							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<textarea id="vplink-text" style="width: 348px; height: 60px; border-color: #7EADD9; outline: none;"></textarea>				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="HeaderText">
+		<span>
+Wrapper		</span>
+	</div>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="HeaderLine1">
+			</td>
+		</tr>
+		<tr>
+			<td class="HeaderLine2">
+			</td>
+		</tr>
+		<tr>
+			<td class="HeaderLine3">
+			</td>
+		</tr>
+	</table>
+	<p>
+<a href="Package_uAzFcNaGAqDIVwsI.html" class="PageParentTitle">java : Package</a><span class="PageParentTitle">&nbsp;.&nbsp;</span><a href="Package__AzFcNaGAqDIVwsJ.html" class="PageParentTitle">langs : Package</a>	</p>
+	<p class="PageTitle">
+Class - Comparable<a onclick="javascript: showVpLink('Diagramas.vpp://modelelement/.AzFcNaGAqDIVwsK', 'Comparable\nDiagramas.vpp://modelelement/.AzFcNaGAqDIVwsK', 'Comparable', this); return false;" style="padding-left: 16px; font-size: 12px" href="#"><img src="../images/icons/link.png" border="0"> link</a>	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Properties			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      This interface imposes a total ordering on the objects of each class that
+    </p>
+    <p style="margin-top:0;">
+      implements it. &nbsp;This ordering is referred to as the class's &lt;i&gt;natural
+    </p>
+    <p style="margin-top:0;">
+      ordering&lt;/i&gt;, and the class's &lt;tt&gt;compareTo&lt;/tt&gt; method is referred to as
+    </p>
+    <p style="margin-top:0;">
+      its &lt;i&gt;natural comparison method&lt;/i&gt;.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      Lists (and arrays) of objects that implement this interface can be sorted
+    </p>
+    <p style="margin-top:0;">
+      automatically by {@link Collections#sort(List) Collections.sort} (and
+    </p>
+    <p style="margin-top:0;">
+      {@link Arrays#sort(Object[]) Arrays.sort}). &nbsp;Objects that implement this
+    </p>
+    <p style="margin-top:0;">
+      interface can be used as keys in a {@linkplain SortedMap sorted map} or 
+      as
+    </p>
+    <p style="margin-top:0;">
+      elements in a {@linkplain SortedSet sorted set}, without the need to
+    </p>
+    <p style="margin-top:0;">
+      specify a {@linkplain Comparator comparator}.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      The natural ordering for a class &lt;tt&gt;C&lt;/tt&gt; is said to be &lt;i&gt;consistent
+    </p>
+    <p style="margin-top:0;">
+      with equals&lt;/i&gt; if and only if &lt;tt&gt;e1.compareTo(e2) == 0&lt;/tt&gt; has
+    </p>
+    <p style="margin-top:0;">
+      the same boolean value as &lt;tt&gt;e1.equals(e2)&lt;/tt&gt; for every
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;e1&lt;/tt&gt; and &lt;tt&gt;e2&lt;/tt&gt; of class &lt;tt&gt;C&lt;/tt&gt;. &nbsp;Note that &lt;tt&gt;null&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      is not an instance of any class, and &lt;tt&gt;e.compareTo(null)&lt;/tt&gt; should
+    </p>
+    <p style="margin-top:0;">
+      throw a &lt;tt&gt;NullPointerException&lt;/tt&gt; even though &lt;tt&gt;e.equals(null)&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      returns &lt;tt&gt;false&lt;/tt&gt;.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      It is strongly recommended (though not required) that natural orderings 
+      be
+    </p>
+    <p style="margin-top:0;">
+      consistent with equals. &nbsp;This is so because sorted sets (and sorted maps)
+    </p>
+    <p style="margin-top:0;">
+      without explicit comparators behave &quot;strangely&quot; when they are used with
+    </p>
+    <p style="margin-top:0;">
+      elements (or keys) whose natural ordering is inconsistent with equals. 
+      &nbsp;In
+    </p>
+    <p style="margin-top:0;">
+      particular, such a sorted set (or sorted map) violates the general 
+      contract
+    </p>
+    <p style="margin-top:0;">
+      for set (or map), which is defined in terms of the &lt;tt&gt;equals&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      method.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      For example, if one adds two keys &lt;tt&gt;a&lt;/tt&gt; and &lt;tt&gt;b&lt;/tt&gt; such that
+    </p>
+    <p style="margin-top:0;">
+      {@code (!a.equals(b) &amp;&amp; a.compareTo(b) == 0)} to a sorted
+    </p>
+    <p style="margin-top:0;">
+      set that does not use an explicit comparator, the second &lt;tt&gt;add&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      operation returns false (and the size of the sorted set does not 
+      increase)
+    </p>
+    <p style="margin-top:0;">
+      because &lt;tt&gt;a&lt;/tt&gt; and &lt;tt&gt;b&lt;/tt&gt; are equivalent from the sorted set's
+    </p>
+    <p style="margin-top:0;">
+      perspective.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      Virtually all Java core classes that implement &lt;tt&gt;Comparable&lt;/tt&gt; have 
+      natural
+    </p>
+    <p style="margin-top:0;">
+      orderings that are consistent with equals. &nbsp;One exception is
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;java.math.BigDecimal&lt;/tt&gt;, whose natural ordering equates
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;BigDecimal&lt;/tt&gt; objects with equal values and different precisions
+    </p>
+    <p style="margin-top:0;">
+      (such as 4.0 and 4.00).&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      For the mathematically inclined, the &lt;i&gt;relation&lt;/i&gt; that defines
+    </p>
+    <p style="margin-top:0;">
+      the natural ordering on a given class C is:&lt;pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      {(x, y) such that x.compareTo(y) &amp;lt;= 0}.
+    </p>
+    <p style="margin-top:0;">
+      &lt;/pre&gt; The &lt;i&gt;quotient&lt;/i&gt; for this total order is: &lt;pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      {(x, y) such that x.compareTo(y) == 0}.
+    </p>
+    <p style="margin-top:0;">
+      &lt;/pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      It follows immediately from the contract for &lt;tt&gt;compareTo&lt;/tt&gt; that the
+    </p>
+    <p style="margin-top:0;">
+      quotient is an &lt;i&gt;equivalence relation&lt;/i&gt; on &lt;tt&gt;C&lt;/tt&gt;, and that the
+    </p>
+    <p style="margin-top:0;">
+      natural ordering is a &lt;i&gt;total order&lt;/i&gt; on &lt;tt&gt;C&lt;/tt&gt;. &nbsp;When we say 
+      that a
+    </p>
+    <p style="margin-top:0;">
+      class's natural ordering is &lt;i&gt;consistent with equals&lt;/i&gt;, we mean that 
+      the
+    </p>
+    <p style="margin-top:0;">
+      quotient for the natural ordering is the equivalence relation defined by
+    </p>
+    <p style="margin-top:0;">
+      the class's {@link Object#equals(Object) equals(Object)} method:&lt;pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      {(x, y) such that x.equals(y)}. &lt;/pre&gt;&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      This interface is a member of the
+    </p>
+    <p style="margin-top:0;">
+      &lt;a href=&quot;{@docRoot}/../technotes/guides/collections/index.html&quot;&gt;
+    </p>
+    <p style="margin-top:0;">
+      Java Collections Framework&lt;/a&gt;.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @param &lt;T&gt; the type of objects that this object may be compared to
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Josh Bloch
+    </p>
+    <p style="margin-top:0;">
+      @see java.util.Comparator
+    </p>
+    <p style="margin-top:0;">
+      @since 1.2
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Active</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Business Key Mutable</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Business Model</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Root</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Stereotypes</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+				<span class="TableContent">
+<a href="Stereotype_hAzFcNaGAqDIVwsL.html" class="ItemLink">Interface</a>				</span>
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Operations Summary			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="8" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="8" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="10%">
+<span class="TableHeaderText">Visibility</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td width="15%">
+<span class="TableHeaderText">Return Type</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Description</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="8" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<a href="DataType_PB2FcNaGAqDIVwd7.html" class="ItemLink">int</a>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class__AzFcNaGAqDIVwsK.html#pAzFcNaGAqDIVwsO" class="ItemLink">compareTo</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Compares this object with the specified object for order. &nbsp;Returns a
+    </p>
+    <p style="margin-top:0;">
+      negative integer, zero, or a positive integer as this object is less
+    </p>
+    <p style="margin-top:0;">
+      than, equal to, or greater than the specified object.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The implementor must ensure &lt;tt&gt;sgn(x.compareTo(y)) ==
+    </p>
+    <p style="margin-top:0;">
+      -sgn(y.compareTo(x))&lt;/tt&gt; for all &lt;tt&gt;x&lt;/tt&gt; and &lt;tt&gt;y&lt;/tt&gt;. &nbsp;(This
+    </p>
+    <p style="margin-top:0;">
+      implies that &lt;tt&gt;x.compareTo(y)&lt;/tt&gt; must throw an exception iff
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;y.compareTo(x)&lt;/tt&gt; throws an exception.)
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The implementor must also ensure that the relation is transitive:
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;(x.compareTo(y)&amp;gt;0 &amp;amp;&amp;amp; y.compareTo(z)&amp;gt;0)&lt;/tt&gt; implies
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;x.compareTo(z)&amp;gt;0&lt;/tt&gt;.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;Finally, the implementor must ensure that &lt;tt&gt;x.compareTo(y)==0&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      implies that &lt;tt&gt;sgn(x.compareTo(z)) == sgn(y.compareTo(z))&lt;/tt&gt;, for
+    </p>
+    <p style="margin-top:0;">
+      all &lt;tt&gt;z&lt;/tt&gt;.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;It is strongly recommended, but &lt;i&gt;not&lt;/i&gt; strictly required that
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;(x.compareTo(y)==0) == (x.equals(y))&lt;/tt&gt;. &nbsp;Generally speaking, any
+    </p>
+    <p style="margin-top:0;">
+      class that implements the &lt;tt&gt;Comparable&lt;/tt&gt; interface and violates
+    </p>
+    <p style="margin-top:0;">
+      this condition should clearly indicate this fact. &nbsp;The recommended
+    </p>
+    <p style="margin-top:0;">
+      language is &quot;Note: this class has a natural ordering that is
+    </p>
+    <p style="margin-top:0;">
+      inconsistent with equals.&quot;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;In the foregoing description, the notation
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;sgn(&lt;/tt&gt;&lt;i&gt;expression&lt;/i&gt;&lt;tt&gt;)&lt;/tt&gt; designates the mathematical
+    </p>
+    <p style="margin-top:0;">
+      &lt;i&gt;signum&lt;/i&gt; function, which is defined to return one of &lt;tt&gt;-1&lt;/tt&gt;,
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;0&lt;/tt&gt;, or &lt;tt&gt;1&lt;/tt&gt; according to whether the value of
+    </p>
+    <p style="margin-top:0;">
+      &lt;i&gt;expression&lt;/i&gt; is negative, zero or positive.
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Relationships Summary			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="6" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="6" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Begin</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">End</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="6" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Realization.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Realization.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class__AzFcNaGAqDIVwsK.html#_wQlcNaGAqDIVwuv" class="ItemLink"> : Realization</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class__AzFcNaGAqDIVwsK.html" class="ItemLink">Comparable : Class</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class_xwQlcNaGAqDIVwtF.html" class="ItemLink">Byte : Class</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Realization.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Realization.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class__AzFcNaGAqDIVwsK.html#nQO9cNaGAqDIVw3p" class="ItemLink"> : Realization</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class__AzFcNaGAqDIVwsK.html" class="ItemLink">Comparable : Class</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class_6v29cNaGAqDIVwn_.html" class="ItemLink">Character : Class</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Realization.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Realization.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class__AzFcNaGAqDIVwsK.html#o854.NaGAqACCBf7" class="ItemLink"> : Realization</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class__AzFcNaGAqDIVwsK.html" class="ItemLink">Comparable : Class</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class_OM54_NaGAqACCBdr.html" class="ItemLink">Float : Class</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Realization.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Realization.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class__AzFcNaGAqDIVwsK.html#pSlE.NaGAqACCBor" class="ItemLink"> : Realization</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class__AzFcNaGAqDIVwsK.html" class="ItemLink">Comparable : Class</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class_dClE_NaGAqACCBkR.html" class="ItemLink">Integer : Class</a>				</span>
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Template Parameters			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="8" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="8" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Type</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Modifier</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Default Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="8" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+T			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Operations Details			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+<a name="pAzFcNaGAqDIVwsO"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table border="0" cellpadding="0" width="100%" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">o</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Description</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      the object to be compared.
+    </p>
+  </body>
+</html>
+</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td class="TableContent">
+T						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">compareTo</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Compares this object with the specified object for order. &nbsp;Returns a
+    </p>
+    <p style="margin-top:0;">
+      negative integer, zero, or a positive integer as this object is less
+    </p>
+    <p style="margin-top:0;">
+      than, equal to, or greater than the specified object.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The implementor must ensure &lt;tt&gt;sgn(x.compareTo(y)) ==
+    </p>
+    <p style="margin-top:0;">
+      -sgn(y.compareTo(x))&lt;/tt&gt; for all &lt;tt&gt;x&lt;/tt&gt; and &lt;tt&gt;y&lt;/tt&gt;. &nbsp;(This
+    </p>
+    <p style="margin-top:0;">
+      implies that &lt;tt&gt;x.compareTo(y)&lt;/tt&gt; must throw an exception iff
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;y.compareTo(x)&lt;/tt&gt; throws an exception.)
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The implementor must also ensure that the relation is transitive:
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;(x.compareTo(y)&amp;gt;0 &amp;amp;&amp;amp; y.compareTo(z)&amp;gt;0)&lt;/tt&gt; implies
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;x.compareTo(z)&amp;gt;0&lt;/tt&gt;.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;Finally, the implementor must ensure that &lt;tt&gt;x.compareTo(y)==0&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      implies that &lt;tt&gt;sgn(x.compareTo(z)) == sgn(y.compareTo(z))&lt;/tt&gt;, for
+    </p>
+    <p style="margin-top:0;">
+      all &lt;tt&gt;z&lt;/tt&gt;.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;It is strongly recommended, but &lt;i&gt;not&lt;/i&gt; strictly required that
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;(x.compareTo(y)==0) == (x.equals(y))&lt;/tt&gt;. &nbsp;Generally speaking, any
+    </p>
+    <p style="margin-top:0;">
+      class that implements the &lt;tt&gt;Comparable&lt;/tt&gt; interface and violates
+    </p>
+    <p style="margin-top:0;">
+      this condition should clearly indicate this fact. &nbsp;The recommended
+    </p>
+    <p style="margin-top:0;">
+      language is &quot;Note: this class has a natural ordering that is
+    </p>
+    <p style="margin-top:0;">
+      inconsistent with equals.&quot;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;In the foregoing description, the notation
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;sgn(&lt;/tt&gt;&lt;i&gt;expression&lt;/i&gt;&lt;tt&gt;)&lt;/tt&gt; designates the mathematical
+    </p>
+    <p style="margin-top:0;">
+      &lt;i&gt;signum&lt;/i&gt; function, which is defined to return one of &lt;tt&gt;-1&lt;/tt&gt;,
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;0&lt;/tt&gt;, or &lt;tt&gt;1&lt;/tt&gt; according to whether the value of
+    </p>
+    <p style="margin-top:0;">
+      &lt;i&gt;expression&lt;/i&gt; is negative, zero or positive.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      a negative integer, zero, or a positive integer as this object is less 
+      than, equal to, or greater than the specified object.
+    </p>
+    <p style="margin-top:0;">
+      @throws ClassCastException if the specified object's type prevents it 
+      from being compared to this object.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+<a href="DataType_PB2FcNaGAqDIVwd7.html" class="ItemLink">int</a>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Relationships Detail			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+<a name="_wQlcNaGAqDIVwuv"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent"></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">From</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class__AzFcNaGAqDIVwsK.html" class="ItemLink">Comparable : Class</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">To</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class_xwQlcNaGAqDIVwtF.html" class="ItemLink">Byte : Class</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td style="height: 5px;">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="nQO9cNaGAqDIVw3p"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent"></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">From</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class__AzFcNaGAqDIVwsK.html" class="ItemLink">Comparable : Class</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">To</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class_6v29cNaGAqDIVwn_.html" class="ItemLink">Character : Class</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td style="height: 5px;">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="o854.NaGAqACCBf7"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent"></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">From</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class__AzFcNaGAqDIVwsK.html" class="ItemLink">Comparable : Class</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">To</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class_OM54_NaGAqACCBdr.html" class="ItemLink">Float : Class</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td style="height: 5px;">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="pSlE.NaGAqACCBor"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent"></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">From</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class__AzFcNaGAqDIVwsK.html" class="ItemLink">Comparable : Class</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">To</span>			</td>
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class_dClE_NaGAqACCBkR.html" class="ItemLink">Integer : Class</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td style="height: 5px;">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Appears In			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Diagram</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="2" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/ClassDiagram.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/ClassDiagram.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="ClassDiagram_Pq_FcNaGAqDIVwr1.html" class="ItemLink">Byte : Class Diagram</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/ClassDiagram.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/ClassDiagram.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="ClassDiagram_0wbdcNaGAqDIVwmE.html" class="ItemLink">Character : Class Diagram</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/ClassDiagram.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/ClassDiagram.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="ClassDiagram_tZRY_NaGAqACCBVZ.html" class="ItemLink">Foat : Class Diagram</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/ClassDiagram.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/ClassDiagram.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="ClassDiagram_3df4_NaGAqACCBiO.html" class="ItemLink">Integer : Class Diagram</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/ClassDiagram.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/ClassDiagram.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="ClassDiagram_lyPE_NaGAqACCBqH.html" class="ItemLink">Long : Class Diagram</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/ClassDiagram.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/ClassDiagram.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="ClassDiagram_7_jk_NaGAqACCBwc.html" class="ItemLink">Short : Class Diagram</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/ClassDiagram.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/ClassDiagram.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="ClassDiagram_bab0_NaGAqACCB3f.html" class="ItemLink">Double : Class Diagram</a>				</span>
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<div style="height: 20px;">
+	</div>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="FooterLine">
+			</td>
+		</tr>
+	</table>
+	<div class="HeaderText">
+Wrapper	</div>
+</body>
+</html>
